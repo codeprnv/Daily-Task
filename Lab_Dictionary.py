@@ -54,32 +54,3 @@ for value in employee.values():
 print("\nItems in the dictionary:")
 for key, value in employee.items():
     print(f"{key}: {value}",end= ', ')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# For streak
