@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>SI</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="" />
+		<script>
+			function SI() {
+				var P = document.getElementById("P.A").value;
+				var R = document.getElementById("R").value;
+				var T = document.getElementById("T").value;
+				var SI = (P * R * T) / 100;
+				document.getElementById("result").innerHTML =
+					"The Simple Interest is: " + SI;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style="text-align: center">
+			Program for calculating the Simple Interest
+		</h1>
+		<label for="P.A">Enter your Principal Amount: </label>
+		<input type="number" id="P.A" name="P.A" required /><br /><br />
+		<label for="R">Enter your Rate of Interest(in %): </label>
+		<input type="number" id="R" name="R" required /><br /><br />
+		<label for="T">Enter your Time Period(in yrs): </label>
+		<input type="number" id="T" name="T" required /><br /><br />
+		<button onclick="SI()">Calculate</button><br /><br />
+		<p id="result"></p>
+		<script src="" async defer></script>
+	</body>
+</html>

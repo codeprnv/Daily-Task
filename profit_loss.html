@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="" />
+	</head>
+	<body>
+		<h1>Program for calculating profit and loss</h1>
+		<label for="SP">Enter your Selling Price(in Rs.): </label>
+		<input type="number" id="SP" name="SP" required /><br /><br />
+		<label for="CP">Enter your Cost Price(in Rs.): </label>
+		<input type="number" id="CP" name="CP" required /><br /><br />
+		<button onclick="PL()">Calculate</button><br /><br />
+		<p id="result"></p>
+		<script>
+			function PL() {
+				var SP = document.getElementById("SP").value;
+				var CP = document.getElementById("CP").value;
+				var result = SP - CP;
+				if (SP > CP) {
+					document.getElementById("result").innerHTML =
+						"There is Profit of: " + Math.abs(result) + "Rs.";
+				} else {
+					document.getElementById("result").innerHTML =
+						"There is Loss of: " + Math.abs(result) + "Rs.";
+				}
+			}
+		</script>
+	</body>
+</html>
